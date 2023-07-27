@@ -12,7 +12,11 @@ export interface RawBook {
 	book: Book;
 }
 
-export interface Book {
+export interface Book extends BookBase {
+	availability: boolean;
+}
+
+export interface BookBase {
 	title: string;
 	pages: number;
 	genre: string;
@@ -22,5 +26,4 @@ export interface Book {
 	ISBN: string;
 	author: Author;
 	priority?: number;
-	availability: boolean;
 }

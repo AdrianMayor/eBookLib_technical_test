@@ -17,6 +17,7 @@ const BookModal = ({ book, setDisplayModal, open }: BookModalProps) => {
 	const { handleAdd, handleRemove, isAvailable } = useHandleCards({ book });
 	const { reduxListState } = useManageRedux();
 	const bookInRedux = reduxListState.find((item) => item.ISBN === book.ISBN);
+
 	useEffect(() => {
 		open ? modalRef?.current?.showModal() : modalRef?.current?.close();
 	}, [open]);
