@@ -89,19 +89,17 @@ To set up the project, follow these steps:
 
 1. Clone the repository from GitHub or download the source code.
 
-2. Create a file named ".env" in the project's root directory and define the variable "HOST=" with the root of the machine that will run the project. You can refer to the ".env.example" file as a guide for configuring this file.
+2. Ensure you have Node.js and npm installed on your machine.
 
-3. Ensure you have Node.js and npm installed on your machine.
+3. Open a terminal or command prompt and navigate to the project's directory.
 
-4. Open a terminal or command prompt and navigate to the project's directory.
+4. Run the following command to install the necessary dependencies: npm install
 
-5. Run the following command to install the necessary dependencies: npm install
+5. Once the installation is complete, you can start the project in the development environment by running: npm run dev
 
-6. Once the installation is complete, you can start the project in the development environment by running: npm run dev
+6. If you wish to deploy the production environment, first build the project with: npm run build
 
-7. If you wish to deploy the production environment, first build the project with: npm run build
-
-8. Then, start the project in the production environment with: npm start
+7. Then, start the project in the production environment with: npm start
 
 You should now have the project up and running and accessible through the URL provided by Next.js in the development environment or the hosting service where you deployed the production environment.
 
