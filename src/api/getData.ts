@@ -1,11 +1,7 @@
-import { headers } from "next/dist/client/components/headers";
-import { Book } from "@/models/book.model";
-
-const getData = async () => {
-	// This 2 lines of code is needed to be able to fetch api in SSR components
-	const response = await fetch(`${process.env.HOST}/api/books`);
-	const books: Book[] = await response.json();
-	return books;
-};
+async function getData() {
+	const res = await import("../app/api/books/route");
+	console.log(res);
+	return await (await res.GET()).json();
+}
 
 export default getData;

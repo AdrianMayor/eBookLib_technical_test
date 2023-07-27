@@ -8,7 +8,8 @@
 	background-color: colors.$primary-color;
 
 	@media (max-width: 860px) {
-		padding: 1.5rem 2rem;
+		padding: 0 2rem;
+		padding-top: 1.5rem;
 	}
 
 	&_mobile_button {

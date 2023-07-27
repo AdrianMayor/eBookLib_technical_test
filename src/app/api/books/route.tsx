@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import path from "path";
 
 // If this function  is migrated to arrow function it breaks in first load empty cache
-export async function GET(request: Request) {
+export async function GET(request?: Request) {
 	//Find the absolute path of the json directory
 	const jsonDirectory = path.join(process.cwd(), "json");
 
