@@ -16,9 +16,4 @@ async function getData() {
 
 export default getData;
 
-// const getData = async () => {
-// 	// This 2 lines of code is needed to be able to fetch api in SSR components
-// 	const response = await fetch(`${process.env.HOST}/api/books`);
-// 	const books: Book[] = await response.json();
-// 	return books;
-// };
+
